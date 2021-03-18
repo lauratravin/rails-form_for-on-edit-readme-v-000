@@ -4,15 +4,15 @@
 <%= form_tag(@post) do |g|%>
   <label>Post title:</label><br>
   <!-- <%= text_field_tag :title, @post.title %><br> -->
-  <%= f.text_field :title %><br>
+  <%= g.text_field :title %><br>
 
 
   <label>Post Description</label><br>
   <!-- <%= text_area_tag :description, @post.description %><br>
    -->
-   <%= f.text_area :description %><br>
+   <%= g.text_area :description %><br>
 
   <!-- <%= submit_tag "Submit Post" %> -->
-  <%= f.submit %>
+  <%= g.submit %>
 
 <% end %>
