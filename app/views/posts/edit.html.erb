@@ -1,7 +1,7 @@
 <h3>Post Form</h3>
 
 <!-- <%= form_tag post_path(@post), method: "put" do %> -->
-<%= form_for(@post) do |g|%>
+<%= form_for @post do |g|%>
   <label>Post title:</label><br>
   <!-- <%= text_field_tag :title, @post.title %><br> -->
   <%= g.text_field :title %><br>
