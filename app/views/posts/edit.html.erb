@@ -2,17 +2,17 @@
 
 <!-- <%= form_tag post_path(@post), method: "put" do %> -->
 <%= form_for(@post) do |g|%>
-  <label>Post title:</label><br>
-  <!-- <%= text_field_tag :title, @post.title %><br> -->
-  <%= g.text_field :title %><br>
+        <label>Post title:</label><br>
+        <!-- <%= text_field_tag :title, @post.title %><br> -->
+        <%= g.text_field :title %><br>
 
 
-  <label>Post Description</label><br>
-  <!-- <%= text_area_tag :description, @post.description %><br>
-   -->
-   <%= g.text_area :description %><br>
+        <label>Post Description</label><br>
+        <!-- <%= text_area_tag :description, @post.description %><br>
+         -->
+         <%= g.text_area :description %><br>
 
-  <!-- <%= submit_tag "Submit Post" %> -->
-  <%= g.submit %>
+        <!-- <%= submit_tag "Submit Post" %> -->
+        <%= g.submit %>
 
 <% end %>
